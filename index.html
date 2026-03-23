@@ -22,14 +22,17 @@
     <main class="container todo__container">
       <h1 class="todo__title">Задачи</h1>
 
-
       <form class="form-add">
-        <input type="text" class="form-add__input" placeholder="Введите задачу">
+        <input
+          type="text"
+          class="form-add__input"
+          placeholder="Введите задачу"
+        />
         <button class="form-add__button" type="submit">Добавить</button>
       </form>
 
       <div class="toolbat">
-        <input type="text" placeholder="Поиск задачи" class="toolbar__search">
+        <input type="text" placeholder="Поиск задачи" class="toolbar__search" />
         <div class="toolbar__tabs tabs">
           <button class="tabs__btn">Все</button>
           <button class="tabs__btn">Активные</button>
@@ -41,26 +44,30 @@
         </select>
       </div>
 
-
-
       <div class="tasks">
-
         <div class="task">
           <div class="task__content">
-            <h3 class="task__title">
-              Сделать уроки
-            </h3>
-            <span class="task__meta">
-              23.03.26, 12:23
-            </span>
+            <h3 class="task__title">Сделать уроки</h3>
+            <span class="task__meta"> 23.03.26, 12:23 </span>
           </div>
 
           <div class="task__actions">
             <button class="task__action task__action--edit"></button>
-             <button class="task__action task__action--delete"></button>
+            <button class="task__action task__action--delete"></button>
           </div>
-
         </div>
+      </div>
+
+      <div class="footer-controls">
+        <div class="footer-controls__counters">
+          <span>Всего: 1</span>
+          <span>Активных: 1</span>
+          <span>Выполненных: 0</span>
+        </div>
+
+        <button class="footer-controls__btn">
+          Очистить выполненные
+        </button>
       </div>
     </main>
   </body>
